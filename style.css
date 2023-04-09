@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+body {
+    padding: 2rem;
+}
+
+p {
+    margin-block: 1rem;
+}
+
+body > p:first-of-type {
+    margin-top: 0;
+}
+
+div p {
+    margin-block: 0;
+}
+
+div {
+    margin-block: 1rem;
+}
+
+a {
+    display: block;
+}
+
+
+
+
+
+/** ESTILOS DEL VIDEO **/
+
+/* p {
+    color: red;
+} */
+
+.rojo {
+    color: red;
+}
+
+#rojo {
+    color: red;
+}
+
+.verde {
+    color: #23de23;
+}
+
+.oscuro {
+    color: green;
+}
+
+.verde.oscuro {
+    color: rgb(65, 48, 213);
+}
+
+.parent .child {
+    color: red;
+}
+
+.principal,
+.secundario,
+.terciario {
+    color: blue;
+}
+
+.abuelo > .padre > .hijo {
+    color: red;
+}
+
+.hijo1 {
+    color: green;
+}
+
+.hijo2 + .hijo3 {
+    color: orange;
+}
+
+.hijo1 ~ .hijo4 {
+    color: purple;
+}
+
+[target="_blank"] {
+    color: orange;
+}
+
+/* [title~="ejemplo"] {
+    color: red;
+} */
+
+[title*="es un ejem"] {
+    color: red;
+}
+
+[href^="https"] {
+    color: orange;
+}
+
+[href$=".com.ar"] {
+    color: red;
+}

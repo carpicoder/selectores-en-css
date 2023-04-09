@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Selectores en CSS</h1>
+
+    <!-- element --> <!-- sin clase -->
+
+    <!-- .class -->
+    <p class="rojo">
+        Este párrafo tiene la clase "rojo".
+    </p>
+
+    <!-- #id -->
+    <p id="rojo">
+        Este párrafo tiene el id "rojo".
+    </p>
+
+    <!-- .class.class // element.class -->
+    <p class="verde">
+        Este párrafo tiene la clase "verde".
+    </p>
+
+    <p class="verde oscuro">
+        Este párrafo tiene las clases "verde" y "oscuro".
+    </p>
+
+    <!-- .parent .child -->
+    <div class="parent">
+        <p class="hijo">Este párrafo tiene la clase "hijo", y un padre con la clase "parent".</p>
+    </div>
+
+    <!-- .class, .class // element, element-->
+    <div>
+        <p class="principal">Este párrafo tiene la clase "principal".</p>
+        <p class="secundario">Este párrafo tiene la clase "secundario".</p>
+        <p class="terciario">Este párrafo tiene la clase "terciario".</p>
+    </div>
+
+    <!-- .parent > .child -->
+    <div class="abuelo">
+        <div class="padre">
+            <p class="hijo">Este párrafo tiene la clase "hijo", un padre con la clase "padre" y un abuelo con la clase "abuelo".</p>
+        </div>
+    </div>
+
+    <!-- .class + .class // .class ~ .class -->
+    <div class="padre">
+        <p class="hijo1">Este párrafo tiene la clase "hijo1".</p>
+        <p class="hijo2">Este párrafo tiene la clase "hijo2".</p>
+        <p class="hijo3">Este párrafo tiene la clase "hijo3".</p>
+        <p class="hijo4">Este párrafo tiene la clase "hijo4".</p>
+    </div>
+
+    <!-- [atributo] // [atributo="valor"] -->
+    <div>
+        <a class="link" href="#" target="_self">Link de ejemplo</a>
+        <a class="link" href="#" target="_blank">Link de ejemplo</a>
+        <a class="link" href="#">Link de ejemplo</a>
+    </div>
+
+    <!-- [atributo~="valor"] -> contienen la palabra -->
+    <!-- [atributo*="valor"] -> contienen un pedazo de texto -->
+    <p title="esto es un ejemplo">Este párrafo tiene el title "esto es un ejemplo".</p>
+
+    <!-- [atributo^="valor"] -> comienzan con la palabra -->
+    <!-- [atributo$="valor"] -> terminan con la palabra -->
+    <a href="https://google.com">Ir a Google (https y .com)</a>
+    <a href="http://google.com.ar">Ir a Google (http y .com.ar)</a>
+
+    
+</body>
+</html>
